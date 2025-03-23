@@ -2,7 +2,7 @@ import { CgPlayButton } from "react-icons/cg";
 import Image from "next/image";
 export default function AboutPage() {
   return (
-    <div className="flex flex-col max-w-7xl mx-auto bg-none my-16">
+    <div className="flex flex-col max-w-7xl mx-auto bg-none my-16 md:mt-24">
       <div className="flex flex-col items-center justify-center bg-gray-800/20 backdrop-blur-sm p-8 rounded-2xl mx-4 md:mx-8">
         <h1 className="text-white lg:text-7xl text-5xl font-extrabold tracking-tight text-center md:text-start">
           OUR VISION
@@ -26,19 +26,25 @@ export default function AboutPage() {
             <ul className="flex flex-col md:justify-start items-start">
               <div className="flex items-center mt-3 px-3 text-center justify-center md:justify-start space-x-4">
                 <CgPlayButton />
-                <li>Custom Web Design & Development</li>
+                <li className="text-[#82d8dd]">
+                  Custom Web Design & Development
+                </li>
               </div>
               <div className="flex items-center mt-3 px-3 text-center justify-center md:justify-start space-x-4">
                 <CgPlayButton />
-                <li>UI/UX Design</li>
+                <li className="text-[#82d8dd]">UI/UX Design</li>
               </div>
               <div className="flex items-center mt-3 px-3 text-center justify-center md:justify-start space-x-4">
                 <CgPlayButton />
-                <li>SEO & Performance Optimization</li>
+                <li className="text-[#82d8dd]">
+                  SEO & Performance Optimization
+                </li>
               </div>
               <div className="flex items-center mt-3 px-3 text-center justify-center md:justify-start space-x-4">
                 <CgPlayButton />
-                <li>Ongoing Support & Maintenance</li>
+                <li className="text-[#82d8dd]">
+                  Ongoing Support & Maintenance
+                </li>
               </div>
             </ul>
             <p className="mt-4">

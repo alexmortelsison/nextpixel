@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="lg:max-w-[85%] mx-auto">
       <div className="lg:grid grid-cols-1 md:grid-cols-2">
         <div className="mt-2 px-12 lg:px-0">
-          <h1 className="lg:text-8xl font-extrabold md:text-7xl md:pt-20 text-4xl lg:w-[1050px] mx-auto tracking-tighter font-sans text-white text-center lg:text-start">
+          <h1 className="lg:text-8xl font-extrabold md:text-7xl md:pt-44 text-4xl lg:w-[1050px] mx-auto tracking-tighter font-sans text-white text-center lg:text-start">
             Next-Level Web Design - Built to{" "}
             <span className="text-[#82d8dd]">Impress.</span>
           </h1>
