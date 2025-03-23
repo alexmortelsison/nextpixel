@@ -10,7 +10,7 @@ export default function Hero() {
           fill
           className="-z-50 brightness-30 object-cover"
         />
-        <div className="mt-8 px-12 lg:px-0">
+        <div className="mt-2 px-12 lg:px-0">
           <h1 className="lg:text-8xl font-extrabold md:text-7xl md:pt-20 text-4xl lg:w-[1050px] mx-auto tracking-tighter font-sans text-white text-center lg:text-start">
             Next-Level Web Design - Built to{" "}
             <span className="text-[#82d8dd]">Impress.</span>
@@ -21,7 +21,7 @@ export default function Hero() {
             that are not only visually stunning but also highly effective.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-[#82d8dd] text-white px-8 py-2 rounded-xl mt-24 md:mt-12 shadow-md shadow-gray-600 hover:bg-[#77c5c9f6] cursor-pointer">
+            <button className="bg-[#82d8dd] text-white px-8 py-2 rounded-xl mt-16 md:mt-12 shadow-md shadow-gray-600 hover:bg-[#77c5c9f6] cursor-pointer">
               Learn More.
             </button>
           </div>

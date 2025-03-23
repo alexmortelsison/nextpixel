@@ -34,12 +34,12 @@ export default function Navbar() {
               alt="logo"
               width={200}
               height={200}
-              className="object-cover w-40 h-40"
+              className="object-cover w-40 h-50"
             />
           </Link>
         </div>
 
-        <div className="flex border px-16 py-4 space-x-4 tracking-tight bg-gray-500/10 backdrop-blur-sm rounded-full ">
+        <div className="lg:flex border px-16 py-4 space-x-4 tracking-tight bg-gray-800/10 backdrop-blur-sm rounded-full hidden">
           {navLinks.map((link) => (
             <div key={link.href} className="">
               <Link
@@ -55,6 +55,7 @@ export default function Navbar() {
             </div>
           ))}
         </div>
+        <button>A</button>
       </div>
     </nav>
   );
