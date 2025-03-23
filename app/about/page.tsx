@@ -2,7 +2,7 @@ import { CgPlayButton } from "react-icons/cg";
 import Image from "next/image";
 export default function AboutPage() {
   return (
-    <div className="flex flex-col max-w-7xl mx-auto bg-none my-16 md:mt-24">
+    <div className="flex flex-col max-w-7xl mx-auto bg-none my-8 md:mt-24">
       <div className="flex flex-col items-center justify-center bg-gray-800/20 backdrop-blur-sm p-8 rounded-2xl mx-4 md:mx-8">
         <h1 className="text-white lg:text-7xl text-5xl font-extrabold tracking-tight text-center md:text-start">
           OUR VISION
