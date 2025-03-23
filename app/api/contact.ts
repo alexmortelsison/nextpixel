@@ -19,7 +19,7 @@ export default async function handler(req: NextRequest) {
       await req.json();
 
     const msg = {
-      to: "your-email@example.com",
+      to: process.env.RECIPIENT_EMAIL,
       from: "no-reply@example.com", // Ensure this is a valid sender email for SendGrid
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       text: `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
