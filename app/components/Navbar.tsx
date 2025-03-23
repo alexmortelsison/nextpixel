@@ -64,7 +64,7 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden z-0">
           <DropdownMenu>
             <DropdownMenuTrigger>
               <BiMenuAltRight className="text-white" size={30} />
