@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,9 +16,11 @@ export default function Hero() {
             that are not only visually stunning but also highly effective.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-[#82d8dd] text-white px-8 py-2 rounded-xl mt-16 md:mt-12 shadow-md shadow-gray-600 hover:bg-[#77c5c9f6] cursor-pointer">
-              Learn More.
-            </button>
+            <Link href={"/about"}>
+              <button className="bg-[#82d8dd] text-white px-8 py-2 rounded-xl mt-16 md:mt-12 shadow-md shadow-gray-600 hover:bg-[#77c5c9f6] cursor-pointer">
+                Learn More.
+              </button>
+            </Link>
           </div>
         </div>
 
