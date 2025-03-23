@@ -4,12 +4,6 @@ export default function Hero() {
   return (
     <div className="lg:max-w-[85%] mx-auto">
       <div className="lg:grid grid-cols-1 md:grid-cols-2">
-        <Image
-          src={"/bg2.png"}
-          alt="bg"
-          fill
-          className="-z-50 brightness-30 object-cover"
-        />
         <div className="mt-2 px-12 lg:px-0">
           <h1 className="lg:text-8xl font-extrabold md:text-7xl md:pt-20 text-4xl lg:w-[1050px] mx-auto tracking-tighter font-sans text-white text-center lg:text-start">
             Next-Level Web Design - Built to{" "}
