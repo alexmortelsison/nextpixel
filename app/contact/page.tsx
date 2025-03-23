@@ -1,3 +1,4 @@
+"use client";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { Input } from "@/components/ui/input";
