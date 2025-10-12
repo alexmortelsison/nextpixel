@@ -1,18 +1,5 @@
-import Hero from "./components/Hero";
-
-import AboutPage from "./about/page";
-import Testimonial from "./components/Testimonial";
-import ContactPage from "./contact/page";
-import Footer from "./components/Footer";
+import React from "react";
 
 export default function Home() {
-  return (
-    <div className="">
-      <Hero />
-      <AboutPage />
-      <Testimonial />
-      <ContactPage />
-      <Footer />
-    </div>
-  );
+  return <div>Home</div>;
 }
