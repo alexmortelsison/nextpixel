@@ -8,6 +8,7 @@ export default function HomePage() {
   const primaryRef = useRef(null);
   const secondaryRef = useRef(null);
   const imageRef = useRef(null);
+  const textRef = useRef(null);
 
   useEffect(() => {
     gsap.to(bgRef.current, {
@@ -38,9 +39,16 @@ export default function HomePage() {
       delay: 1.2,
       ease: "power2.inOut",
     });
+    gsap.to(textRef.current, {
+      x: 80,
+      opacity: 1,
+      duration: 1,
+      delay: 1.8,
+      ease: "power2.inOut",
+    });
   }, []);
   return (
-    <div className="relative h-[100vh] w-screen inset-0 overflow-hidden bg-gradient-to-b from-[#ffb463] via-90%">
+    <div className="relative h-[100vh] w-screen inset-0 overflow-hidden">
       <div
         className="absolute inset-0 z-10 flex justify-center opacity-0"
         ref={bgRef}
@@ -90,11 +98,19 @@ export default function HomePage() {
           className="object-cover w-[450px] h-[450px] rounded-full"
         />
       </div>
-      <div className="flex absolute z-40 text-black justify-start items-center inset-0 max-w-7xl w-[700px] mx-auto right-96">
-        <h1 className="text-white font-righteous text-8xl">
-          Next-Level Web Design - <br />
-          <span className="text-6xl">Built to Impress</span>
-        </h1>
+      <div
+        className="flex absolute z-40 text-black justify-start items-center inset-0 max-w-7xl w-[600px] mx-auto right-150 opacity-0 -translate-x-80"
+        ref={textRef}
+      >
+        <div className="flex flex-col">
+          <h1 className="text-5xl font-black tracking-tighter text-orange-500">
+            NextPixel Studio Labs
+          </h1>
+          <h2 className="text-white font-righteous text-8xl tracking-tighter pt-12">
+            Next-Level Web Design
+            <br /> <span className="text-6xl">Built to Impress</span>
+          </h2>
+        </div>
       </div>
     </div>
   );
