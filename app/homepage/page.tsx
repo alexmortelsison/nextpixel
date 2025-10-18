@@ -106,9 +106,10 @@ export default function HomePage() {
           <h1 className="text-5xl font-black tracking-tighter text-orange-500">
             NextPixel Studio Labs
           </h1>
-          <h2 className="text-white font-righteous text-8xl tracking-tighter pt-12">
+          <h2 className="text-white font-righteous text-8xl tracking-tighter pt-12 font-bold">
             Next-Level Web Design
-            <br /> <span className="text-6xl">Built to Impress</span>
+            <br />{" "}
+            <span className="text-6xl font-normal">Built to Impress</span>
           </h2>
         </div>
       </div>
