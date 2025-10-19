@@ -11,6 +11,7 @@ export default function HomePage() {
   const imageRef = useRef(null);
   const textRef = useRef(null);
   const navRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     gsap.to(bgRef.current, {
@@ -53,6 +54,13 @@ export default function HomePage() {
       opacity: 1,
       duration: 1,
       delay: 2,
+      ease: "power2.inOut",
+    });
+    gsap.to(buttonRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      delay: 2.2,
       ease: "power2.inOut",
     });
   }, []);
@@ -126,6 +134,11 @@ export default function HomePage() {
             <br />{" "}
             <span className="text-6xl font-normal">Built to Impress</span>
           </h2>
+          <div className="pt-12 opacity-0 -translate-y-80" ref={buttonRef}>
+            <button className="bg-orange-400 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-orange-400/80">
+              Learn more
+            </button>
+          </div>
         </div>
       </div>
     </div>
