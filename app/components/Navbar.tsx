@@ -19,7 +19,12 @@ export default function Navbar() {
         <Link href={"/"}>NextPixel</Link>
       </div>
       <div className="flex space-x-4 items-center text-white flex-1 pl-24">
-        <AiFillInstagram className="text-3xl" />
+        <a
+          href="https://www.instagram.com/nextpixelstudiolabs?igsh=MW54eDVqbnQzOGgzYg%3D%3D&utm_source=qr"
+          target="_blank"
+        >
+          <AiFillInstagram className="text-3xl" />
+        </a>
         <BsFacebook className="text-2xl" />
         <CgMail className="text-3xl" />
       </div>
