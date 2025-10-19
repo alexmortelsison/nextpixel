@@ -10,6 +10,7 @@ export default function HomePage() {
   const secondaryRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
+  const navRef = useRef(null);
 
   useEffect(() => {
     gsap.to(bgRef.current, {
@@ -47,10 +48,20 @@ export default function HomePage() {
       delay: 1.8,
       ease: "power2.inOut",
     });
+    gsap.to(navRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      delay: 2,
+      ease: "power2.inOut",
+    });
   }, []);
   return (
     <div className="relative h-[100vh] w-screen inset-0 overflow-hidden">
-      <div className="absolute pt-30 z-60 w-[1940px] mx-auto pr-5">
+      <div
+        className="absolute pt-30 z-60 w-[1940px] mx-auto pr-5 opacity-0 translate-y-80"
+        ref={navRef}
+      >
         <Navbar />
       </div>
       <div
