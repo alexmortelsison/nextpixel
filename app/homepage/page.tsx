@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function HomePage() {
   const bgRef = useRef(null);
@@ -60,7 +61,7 @@ export default function HomePage() {
       y: 0,
       opacity: 1,
       duration: 1,
-      delay: 2.2,
+      delay: 2,
       ease: "power2.inOut",
     });
   }, []);
@@ -134,9 +135,14 @@ export default function HomePage() {
             <br />{" "}
             <span className="text-6xl font-normal">Built to Impress</span>
           </h2>
-          <div className="pt-12 opacity-0 -translate-y-80" ref={buttonRef}>
+          <div
+            className="pt-12 opacity-0 -translate-y-80  hover:cursor-pointer"
+            ref={buttonRef}
+          >
             <button className="bg-orange-400 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-orange-400/80">
-              Learn more
+              <Link href={"/portfolio"}>
+                <p>Learn more</p>
+              </Link>
             </button>
           </div>
         </div>
