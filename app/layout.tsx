@@ -34,7 +34,6 @@ export default function RootLayout({
       <body
         className={`${righteous.variable} ${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden`}
       >
-        <Navbar />
         {children}
       </body>
     </html>

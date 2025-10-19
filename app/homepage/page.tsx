@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Navbar from "../components/Navbar";
 
 export default function HomePage() {
   const bgRef = useRef(null);
@@ -49,6 +50,9 @@ export default function HomePage() {
   }, []);
   return (
     <div className="relative h-[100vh] w-screen inset-0 overflow-hidden">
+      <div className="absolute pt-30 z-60 w-[1940px] mx-auto pr-5">
+        <Navbar />
+      </div>
       <div
         className="absolute inset-0 z-10 flex justify-center opacity-0"
         ref={bgRef}
