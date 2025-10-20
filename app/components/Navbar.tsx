@@ -25,7 +25,12 @@ export default function Navbar() {
         >
           <AiFillInstagram className="text-3xl" />
         </a>
-        <BsFacebook className="text-2xl" />
+        <a
+          href="https://www.facebook.com/profile.php?id=61575077668650"
+          target="_blank"
+        >
+          <BsFacebook className="text-2xl" />
+        </a>
         <CgMail className="text-3xl" />
       </div>
       <div className="flex items-center space-x-4 pr-6">
